@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A Basic HTML5 Template</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="CVLibrary">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cv-library.co.uk/">
+    <meta property="og:description" content="Search jobs in your area.">
+    <meta property="og:image" content="assets/logo_white.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/search.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+<div class="main-top">
+    <img class="logo" src="assets/logo_white.svg"/>
+    <div class="flex-input">
+        <div class="flex-label">
+            Keywords / Job Title / Job Ref
+        </div>
+        <input type="text" placeholder="e.g. Sales Executive"/>
+    </div>
+
+    <div class="flex-group-input">
+        <div class="flex-input input-location">
+            <div class="flex-label">
+                Location
+            </div>
+            <input type="text" placeholder="e.g. town or postcode" id="location-input"/>
+            <div class="lds-ellipsis hidden" id="location-loader"><div></div><div></div><div></div><div></div></div>
+            <div class="autocomplete-items hidden" id="autocomplete-list">
+            </div>
+        </div>
+
+        <div class="flex-input input-distance">
+            <div class="flex-label">
+                Distance
+            </div>
+            <select type="text" placeholder="e.g. Sales Executive">
+                <option value="15" label="15 Miles"/>
+                <option value="30" label="30 Miles"/>
+                <option value="50" label="50 Miles"/>
+            </select>
+        </div>
+    </div>
+    <div class="flex-input">
+        <button class="submit-button">Find Jobs Now <img src="assets/search.svg"/></button>
+    </div>
+
+</div>
+
+    <input id="tab0" type="radio" name="pct" checked/>
+    <input id="tab1" type="radio" name="pct"/>
+<div class="tabs-head">
+    <label class="single-tab" id="label-tab-0" for="tab0">Jobs by Location</label>
+    <label class="single-tab" id="label-tab-1" for="tab1">Jobs by Industry</label>
+</div>
+
+<div class="main-bottom">
+    <div class="tab-content" id="tab-content-0">
+        <span>Aberdeen</span>
+        <span>Derby</span>
+
+        <span>Basingstoke</span>
+        <span>Doncaster</span>
+
+        <span>Berkshire</span>
+        <span>Edinburgh</span>
+
+        <span>Birmingham</span>
+        <span>Essex</span>
+
+        <span>Bradford</span>
+        <span>Exeter</span>
+
+        <span>Bristol</span>
+        <span>Glasgow</span>
+    </div>
+    <div class="tab-content" id="tab-content-1">
+        <span>Accounting</span>
+        <span>Distribution</span>
+
+        <span>Administration</span>
+        <span>Driving</span>
+
+        <span>Agriculture</span>
+        <span>Education</span>
+
+        <span>Arts</span>
+        <span>Electronics</span>
+
+        <span>Automotive</span>
+        <span>Engineering</span>
+
+        <span>Catering</span>
+        <span>Financial Services</span>
+    </div>
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
